@@ -116,9 +116,9 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   let names = arr.reduce((runningTotal, newValue) => {
-    runningTotal.push(newValue.name), [];
+    runningTotal.push(newValue.name);
     return runningTotal;
-  });
+  }, []);
   return names;
 };
 
