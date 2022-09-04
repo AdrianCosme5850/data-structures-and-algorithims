@@ -74,8 +74,11 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   let newArr = [];
-  input.forEach(currArr => currArr.forEach(currValue => currValue % 5 === 0 ? newArr.push(Array.of(currValue/5, Math.pow(2, currValue))) : console.log('miss') ) );
-  return newArr;
+  input.forEach(array => {
+    array.forEach(value => value % 5 === 0 ? newArr.push(value): console.log('miss') );
+  });
+  let finalArr = newArr.map(value => Math.pow(2, value));
+  return finalArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -141,7 +144,7 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  return data.filter(character => character.gender === 'male' || character.gender === 'female').map(character => character.name).join(' and ');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -151,7 +154,8 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
-  // Solution code here...
+  let short = data.reduce((shortValue, currValue) => Number(shortValue.height) < Number (currValue.height) ? shortValue : currValue).name;
+  return short;
 };
 
 /* ------------------------------------------------------------------------------------------------
