@@ -133,7 +133,11 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+  recipe.ingredients.forEach( ingredient => {
+    ingredient.indexOf('medium-sized' === -1) ?
+      result.push(ingredient.slice(15) ) :
+      ingredient.indexOf('pounds' !== -1) ? result.push(ingredient.slice(0)): console.log('miss');
+  });
   return result;
 };
 
