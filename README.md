@@ -20,4 +20,13 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+### Reverse Array
+
+Reverse an Array in place.
+
+### Whiteboard Process
+![whiteboard](./imgs/Untitled(1).png)
+
+### Approach
+
+Created a for loop that lasts the array length. Then shifted the current index, and spliced the index plus one removing the old number.
