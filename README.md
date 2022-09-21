@@ -30,3 +30,10 @@ Reverse an Array in place.
 ### Approach
 
 Created a for loop that lasts the array length. Then shifted the current index, and spliced the index plus one removing the old number.
+
+## insertShiftArray
+
+![whiteboard](./imgs/Untitled(2).png)
+
+### Approach
+Having trouble solving this one, waiting for tomorrow for help.
