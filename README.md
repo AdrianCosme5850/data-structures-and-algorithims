@@ -31,9 +31,20 @@ Reverse an Array in place.
 
 Created a for loop that lasts the array length. Then shifted the current index, and spliced the index plus one removing the old number.
 
-## insertShiftArray
+### insertShiftArray
 
 ![whiteboard](./imgs/Untitled(2).png)
 
 ### Approach
+
 Having trouble solving this one, waiting for tomorrow for help.
+
+### Binary Search
+
+### WhiteBoard
+
+![whiteboard](./imgs/whiteboard3.jpg)
+
+### Approach
+
+I approached this problem by creating three variables. One for the top range, bottom range, and the middle of the two ranges. Then I created a while loop that will continue until a break is called. If the array at index middle is equal to the search value, then the loop is broken and the index value is returned. If the value at middle index is less than the search value, then the middle value becomes the bottom value. If not then it becomes the top value. continue until the value is found. If not then -1 is returned.
