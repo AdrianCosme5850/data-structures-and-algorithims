@@ -54,3 +54,13 @@ I approached this problem by creating three variables. One for the top range, bo
 ### Approach
 
 Created a large testing suite to ensure all of the individual challenges were completed to specifications. Running pm test stacksQueses.test.js will show all tests.
+
+### Pseudo Queue
+
+### UML
+
+![whiteboard](./imgs/pseudoQueue.jpg)
+
+## Approach
+
+I created two stacks within the queue. Whenever there is an enqueue it is pushed onto one stack. Once a dequeue is called the stack is pushed one at a time into the second stack. From there the first value is popped off and returned. The rest of the values are then pushed one at a time back into the first queue.
