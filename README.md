@@ -48,3 +48,9 @@ Having trouble solving this one, waiting for tomorrow for help.
 ### Approach
 
 I approached this problem by creating three variables. One for the top range, bottom range, and the middle of the two ranges. Then I created a while loop that will continue until a break is called. If the array at index middle is equal to the search value, then the loop is broken and the index value is returned. If the value at middle index is less than the search value, then the middle value becomes the bottom value. If not then it becomes the top value. continue until the value is found. If not then -1 is returned.
+
+### Stacks and Queues
+
+### Approach
+
+Created a large testing suite to ensure all of the individual challenges were completed to specifications. Running pm test stacksQueses.test.js will show all tests.
