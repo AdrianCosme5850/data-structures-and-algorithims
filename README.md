@@ -64,3 +64,13 @@ Created a large testing suite to ensure all of the individual challenges were co
 ## Approach
 
 I created two stacks within the queue. Whenever there is an enqueue it is pushed onto one stack. Once a dequeue is called the stack is pushed one at a time into the second stack. From there the first value is popped off and returned. The rest of the values are then pushed one at a time back into the first queue.
+
+### Linked List insertions
+
+### UML
+
+![whiteboard](./imgs/linkedListInsertions.jpg)
+
+### Approach
+
+Each node is stored as a temp variable. The while loop then checks each of the values as they go. If the values match, the .next is swapped between them and the new node is put in the old ones place.
