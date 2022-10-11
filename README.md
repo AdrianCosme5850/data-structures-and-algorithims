@@ -74,3 +74,12 @@ I created two stacks within the queue. Whenever there is an enqueue it is pushed
 ### Approach
 
 Each node is stored as a temp variable. The while loop then checks each of the values as they go. If the values match, the .next is swapped between them and the new node is put in the old ones place.
+
+### Binary Trees
+
+### UML
+![whiteboard](./imgs/whiteboardtrees.jpg)
+
+### Approach
+
+Each Function recursively calls itself to map throughout the entire tree with some helper arrays included in the constructor.
