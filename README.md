@@ -83,3 +83,14 @@ Each node is stored as a temp variable. The while loop then checks each of the v
 ### Approach
 
 Each Function recursively calls itself to map throughout the entire tree with some helper arrays included in the constructor.
+
+
+### Animal Shelter queue
+
+### UML
+
+![whiteboard](./imgs/animalShelterWhiteboard.jpg)
+
+### Approach
+
+I put two separate firsts for the queue to follow. The functions first check what species the animal is, and then implements them into the animal shelter.
