@@ -104,3 +104,13 @@ I put two separate firsts for the queue to follow. The functions first check wha
 ### Approach
 
 I created three separate variables to keep track of whether or not a bracket had a corresponding closing bracket. If there was an opening bracket it one increment by one. If it had a closing bracket it would be decremented by one. At the end the three variables are totaled and if there is any value other than zero the function returns false.
+
+
+### Max Tree
+
+### UML
+![whiteboard](./imgs/maxTreeWhiteboard.jpg)
+
+### Approach
+
+I created one recursive function to call on inside of the actual max function. That way it could go through the entire tree and return the max value.
