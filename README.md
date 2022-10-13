@@ -94,3 +94,13 @@ Each Function recursively calls itself to map throughout the entire tree with so
 ### Approach
 
 I put two separate firsts for the queue to follow. The functions first check what species the animal is, and then implements them into the animal shelter.
+
+
+### Bracket Validator
+
+### UML
+![whiteboard](./imgs/bracketvalidatorwhiteboard.jpg)
+
+### Approach
+
+I created three separate variables to keep track of whether or not a bracket had a corresponding closing bracket. If there was an opening bracket it one increment by one. If it had a closing bracket it would be decremented by one. At the end the three variables are totaled and if there is any value other than zero the function returns false.
