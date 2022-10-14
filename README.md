@@ -124,3 +124,14 @@ I created one recursive function to call on inside of the actual max function. T
 ### Approach
 
 There is a queue class in addition to the tree class that allows the breadth first traversal to take place. As it dequeues one and adds it to the array, it also enqueues its left and right node.
+
+
+### FizzBuzz k-ary tree
+
+### UML
+
+![whiteboard](./imgs/fizzBuzzWhiteboard.jpg)
+
+### Approach
+
+I created three ternaries to find out whether the number should be replaced with fizz, buzz, or fizzbuzz. Then there is a for loop that loops through the node's children.
