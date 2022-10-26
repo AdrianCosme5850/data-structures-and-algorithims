@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "jest": "^29.2.2"
+  },
+  "name": "insertion",
+  "description": "",
+  "version": "1.0.0",
+  "main": "insertionSort.test.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "author": "",
+  "license": "ISC"
+}
