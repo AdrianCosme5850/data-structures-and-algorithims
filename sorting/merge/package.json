@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "jest": "^29.2.2"
+  },
+  "name": "merge",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "author": "",
+  "license": "ISC"
+}
