@@ -135,3 +135,22 @@ There is a queue class in addition to the tree class that allows the breadth fir
 ### Approach
 
 I created three ternaries to find out whether the number should be replaced with fizz, buzz, or fizzbuzz. Then there is a for loop that loops through the node's children.
+
+### LAB 7 From the end
+
+### UML
+
+![whiteboard](./imgs/fromTheEnd.jpg)
+
+## Approach
+
+I added a previous value to the node class in order to navigate backwards from the tail, as well as a few if statements to catch the edge cases.
+
+### LAB 8 ZipList
+
+### UML
+![whiteboard](./imgs/zipList.jpg)
+
+### Approach
+
+I just set up some if statements that check if the head value is null. If it is the function doesn't run. If it isn't it adds one value from one of the two lists and adds it to the new third list.
