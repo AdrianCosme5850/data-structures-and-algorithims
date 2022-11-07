@@ -81,6 +81,16 @@ class HashTable {
     }
     return newArr;
   }
+  add(string){
+    let index = this.hash(string);
+    console.log(index);
+    if(!this.table[index]){
+      this.table[index] = 1;
+      return false;
+    } else{
+      return true;
+    }
+  }
 }
 
 module.exports = HashTable;
