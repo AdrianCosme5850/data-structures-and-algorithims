@@ -14,3 +14,14 @@ The publicly available methods I use were from mozilla docs for the for of loops
 
 Mozilla: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
 Jest: https://jestjs.io/docs/expect
+
+
+## Code Challenge 33
+
+## UML
+
+![Left Join Hash Table whiteboarf](./imgs/leftJoinHashTable.jpg)
+
+## Approach
+
+I looped through the first given table put the key and value into a new array. I set the last value in that array as null. Then I pushed that array into a larger overall array to hold all of the results. Then I looped through the second table, and checked if each of those tables keys had a corresponding key in the larger holding array. If it did the last value in that array was set to the value in the second table.
