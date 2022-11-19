@@ -7,7 +7,7 @@ class Vertex {
 }
 
 class Edge {
-  constructor(vertex, weight = 1) {
+  constructor(vertex, weight) {
     this.vertex = vertex;
     this.weight = weight;
   }
@@ -33,10 +33,10 @@ class Graph {
    * @param {Vertex} startVertex
    * @param {Vertex} edgeVertex
    */
-  addEdge(startVertex, endVertex) {
+  addEdge(startVertex, endVertex, weight) {
     if (this.adjacencies.has(startVertex) && this.adjacencies.has(endVertex)) {
       let edges = this.adjacencies.get(startVertex); // []
-      edges.push(new Edge(endVertex));
+      edges.push(new Edge(endVertex, weight));
     } else {
       throw new Error('Invalid input Vertex');
     }
@@ -90,26 +90,46 @@ class Graph {
     return newArr;
   }
 
-
+  totalWeights(array){
+    let temp = null;
+    let total = null;
+    let empty = false;
+    for(let i = 0; i < array.length; i++){
+      temp = this.adjacencies.get(array[i]);
+      temp.forEach((edge, idx) => {
+        if(edge.vertex === array[i+1]){
+          total = total + edge.weight;
+        } else if (idx === temp.length -1){
+          total = null;
+          empty = true;
+        }
+      });
+      if(empty === true){
+        break;
+      }
+    }
+    return total;
+  }
 }
+
 
 let graph = new Graph();
 let vertex1 = graph.addVertex('v1');
 let vertex2 = graph.addVertex('v2');
 let vertex3 = graph.addVertex('v3');
 let vertex4 = graph.addVertex('v4');
-graph.addEdge(vertex1, vertex3);
-graph.addEdge(vertex1, vertex2);
-graph.addEdge(vertex2, vertex3);
-graph.addEdge(vertex2, vertex4);
-graph.addEdge(vertex4, vertex3);
+graph.addEdge(vertex1, vertex3, 1);
+graph.addEdge(vertex1, vertex2, 2);
+graph.addEdge(vertex2, vertex3, 3);
+graph.addEdge(vertex2, vertex4, 4);
+graph.addEdge(vertex4, vertex3, 5);
 
-describe('Testing the breadth first traversal', () => {
-  test('The traversal should return the nodes in the order they were visited', () => {
-    expect(graph.breadthFirst()).toEqual(['v1', 'v3', 'v2', 'v4']);
+
+describe('testing the function that will add the weights between vertexes', () => {
+  test('The method should be able to add the weights sequentially', () => {
+    expect(graph.totalWeights([vertex1, vertex2, vertex3])).toEqual(5);
   });
-  test('Should accept an empty graph', () => {
-    let newGraph = new Graph();
-    expect(newGraph.breadthFirst()).toEqual([]);
+  test('The method should return null if there is no edge between the two nodes', () => {
+    expect(graph.totalWeights([vertex1, vertex4])).toEqual(null);
   });
 });

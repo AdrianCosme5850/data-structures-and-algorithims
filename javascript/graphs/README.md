@@ -12,4 +12,10 @@ Most of the methods were solved using the built in methods that come with the Ma
 
 ## Approach  
 
-I solved this problem by looping through the adjacencies array, and returning the unique values into a new array.
+I solved this problem by looping through the adjacencies array, and returning the unique values into a new array.  
+
+## Challenge 37  
+
+## Approach  
+
+Gave this one a good shot, however I couldn't quite come up with an answer. I think I held myself back with how I structured the vertexes, but I'm not quite sure. Couldn't quite solve the problem of needing to traverse all the adjacencies, but return null if there were no edges. It was giving me a lot of problems, but I think if I just pushed the edges into a new data structure I might have better luck.
