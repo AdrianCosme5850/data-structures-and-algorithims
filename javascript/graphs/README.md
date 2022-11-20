@@ -18,4 +18,12 @@ I solved this problem by looping through the adjacencies array, and returning th
 
 ## Approach  
 
-Gave this one a good shot, however I couldn't quite come up with an answer. I think I held myself back with how I structured the vertexes, but I'm not quite sure. Couldn't quite solve the problem of needing to traverse all the adjacencies, but return null if there were no edges. It was giving me a lot of problems, but I think if I just pushed the edges into a new data structure I might have better luck.
+Gave this one a good shot, however I couldn't quite come up with an answer. I think I held myself back with how I structured the vertexes, but I'm not quite sure. Couldn't quite solve the problem of needing to traverse all the adjacencies, but return null if there were no edges. It was giving me a lot of problems, but I think if I just pushed the edges into a new data structure I might have better luck.  
+
+## Challenge 38  
+
+## Approach  
+
+Used the get method on the map class to get the specific node, then looped throught its adjacencies calling a recursive function on each of them. I used an array attached to the graph class because I was having trouble passing in an array to the recursive function and having it persist.  
+
+![whiteboard](./imgs/whiteboardGraphDepthFirst.jpg)
